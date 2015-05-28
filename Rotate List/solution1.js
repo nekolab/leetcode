@@ -29,7 +29,7 @@ var rotateRight = function(head, k) {
         head_ptr = elem;
     }
 
-    (stack.pop() || head_ptr).next = null;
+    stack.pop().next = null;
 
     return elem;
 };
